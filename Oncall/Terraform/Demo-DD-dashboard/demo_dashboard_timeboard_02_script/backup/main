@@ -1,0 +1,25 @@
+# Provider
+# --------
+terraform {
+  required_providers {
+    datadog = {
+      source = "DataDog/datadog"
+    }
+  }
+  required_version = ">= 0.13"  
+}
+
+# API keys for the provider
+# -------------------------
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
+}
+
+resource "datadog_dashboard" "var.dashboard_name" { 
+  title        = "var.title_dashboard"
+  description  = "Created using the Datadog provider in Terraform"
+  layout_type  = "ordered"
+  is_read_only = false
+
+}

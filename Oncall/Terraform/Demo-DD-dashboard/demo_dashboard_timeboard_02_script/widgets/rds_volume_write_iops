@@ -1,0 +1,25 @@
+
+  widget {
+    toplist_definition {
+      request {
+        q = "top(avg:aws.rds.volume_write_iops{$scope} by {name}, 10, 'mean', 'desc')"
+        conditional_formats {
+          comparator = ">"
+          value      = "1000"
+          palette    = "white_on_red"
+        }
+        conditional_formats {
+          comparator = ">="
+          value      = "980"
+          palette    = "white_on_yellow"
+        }
+        conditional_formats {
+          comparator = "<"
+          value      = "950"
+          palette    = "white_on_green"
+        }
+      }
+      title_size  = 13
+      title     = "Volume Write IOPS max"
+    }
+  }

@@ -1,0 +1,12 @@
+
+  widget {
+    check_status_definition {
+      check    = "aws.status"
+      grouping = "cluster"
+      #group_by = ["account", "cluster"]
+      #report_by = "service:ecs"      
+      tags      = ["service:rds"]
+      title_size  = 13
+      title     = "RDS service status"
+    }
+  }

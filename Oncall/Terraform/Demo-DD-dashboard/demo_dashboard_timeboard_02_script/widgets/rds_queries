@@ -1,0 +1,24 @@
+
+  widget {
+    timeseries_definition {
+      request {
+        q            = "avg:aws.rds.queries{$scope} by {name}.as_count()"
+        display_type = "line"
+        style {
+          palette    = "green"
+          line_type  = "solid"
+          line_width = "thin"
+        }
+      }
+      yaxis {
+        scale        = "linear"
+        min          = "auto"
+        max          = "auto"
+        include_zero = true
+        label        = ""
+      }
+      title_align = "center"
+      title_size  = 13
+      title       = "Read Queries"
+    }
+  }

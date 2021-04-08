@@ -1,0 +1,19 @@
+
+  widget {
+    query_value_definition {
+      request {
+        q          = "sum:trace.MySQLdb.connection.commit{$scope}.as_count()"
+        aggregator = "avg"
+        conditional_formats {
+          palette    = "white_on_red"
+          value      = 1
+          comparator = ">"
+        }
+      }
+      autoscale  = true
+      precision  = "2"
+      text_align = "center"
+      title_size  = 13
+      title      = "DB Connection Commit"
+    }
+  }

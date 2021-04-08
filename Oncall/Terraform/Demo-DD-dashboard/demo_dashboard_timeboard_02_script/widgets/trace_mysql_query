@@ -1,0 +1,14 @@
+
+  widget {
+    query_value_definition {
+      request {
+        q          = "sum:trace.mysql.query.duration.by_type{$scope}"
+        aggregator = "avg"
+      }
+      autoscale  = true
+      precision  = "0"
+      text_align = "center"
+      title_size  = 13
+      title      = "Query duration"
+    }
+  }

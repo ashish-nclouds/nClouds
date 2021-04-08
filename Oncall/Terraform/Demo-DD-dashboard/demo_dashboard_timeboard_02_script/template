@@ -1,0 +1,20 @@
+
+###--------------------SCOPE------------------------###
+
+  template_variable {
+    name    = "scope"
+    prefix  = "*"
+    default = "*"
+  }
+  template_variable {
+    name    = "environment"
+    prefix  = "environment"
+    default = "prod"
+  }
+
+  template_variable {
+    name    = "engine"
+    prefix  = "engine"
+    default = "mysql"
+  }
+

@@ -1,0 +1,29 @@
+
+  widget {
+    query_value_definition {
+      request {
+        q          = "sum:aws.rds.cpuutilization{name:nclouds-prod}.as_count()"
+        aggregator = "avg"
+        conditional_formats {
+          palette    = "white_on_red"
+          value      = 80
+          comparator = ">"
+        }
+        conditional_formats {
+          palette    = "white_on_yellow"
+          value      = 71
+          comparator = ">"
+        }
+        conditional_formats {
+          palette    = "white_on_green"
+          value      = 70
+          comparator = ">"
+        }
+      }
+      autoscale  = true
+      precision  = "2"
+      text_align = "center"
+      title_size  = 13
+      title      = "RDS Prod CPU utilization"
+    }
+  }
