@@ -1,0 +1,8 @@
+*.code-workspace
+terraform.tfstate*
+terraform.tfvars
+.terraform.*
+main.tf
+terraform.t
+Ref/
+.terraform/
