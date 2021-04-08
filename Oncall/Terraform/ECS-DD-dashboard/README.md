@@ -25,7 +25,7 @@ datadog_app_key   = "***********************************"
 As dashboard is a single resource and there is no option yet for reusing the widgets as modules.
 
 ## Schema
-Reqired
+Required
 - `layout_type` (String) The layout type of the dashboard, either 'free' or 'ordered'.
 - `title` (String) The title of the dashboard.
 - `widget` (Block List, Min: 1) The list of widgets to display on the dashboard.
