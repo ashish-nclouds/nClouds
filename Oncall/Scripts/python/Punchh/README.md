@@ -11,6 +11,6 @@ Notify mails to Slack channel
 
 ```
 - Need event rule to set on cron to trigger lambda evey 1.8 minute.
-- Lambda checks for latest 3 mails which received within the 120seconds
+- Lambda checks for latest 3 mails which received within 120seconds
 - Using webhook, the email content is notified on slack channel.
 ```
