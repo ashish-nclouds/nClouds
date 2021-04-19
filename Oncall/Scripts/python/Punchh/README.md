@@ -1,6 +1,6 @@
 # Email notifier for slack
 
-Notify gmail mails to Slack channel
+Notify mails to Slack channel
 
 ## Dependencies
 
