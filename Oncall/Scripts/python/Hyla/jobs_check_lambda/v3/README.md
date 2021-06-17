@@ -1,7 +1,7 @@
 # Check Jenkins job alerts and automate the incident actions
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![Build Status](https://raw.githubusercontent.com/travis-ci/travis-api/master/public/images/result/unknown.png)
 ### Author: Ashish Mathai
-###### Code Version: V2
+###### Code Version: V3
 ### Topic: 
 We get alerts on daily basis and the jobs are successful and its getting     failed due to old Jenkins and plugin issue. Permanent fix, Upgrade Jenkins and plugin
 ### Setup 
@@ -34,3 +34,4 @@ Instructions on how to use them in your own application are linked below.
    [l4]: <https://pypi.org/project/urllib3/>
    [l5]: <https://pypi.org/project/time/>
    [l6]: <https://pypi.org/project/python-jenkins/>
+
