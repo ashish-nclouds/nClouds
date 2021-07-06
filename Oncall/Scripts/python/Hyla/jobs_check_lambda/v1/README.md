@@ -25,7 +25,7 @@ For a minimum time, if we compare to check each alert takes 2-3 mins
 - if spending 3 mins per alert, saves 75 mins for the team
 
 ### Setup 
-![Diagram](https://app.cloudcraft.co/view/cf29adb3-a3af-44a3-a922-704f50a2b16f?key=lvnplDNTLs1Y31ksBmGw9A)
+![Diagram](![Diagram](../ref_image/diagram.png))
 
 - API Gateway (POST) integrated with Pagerduty
 - PD -> Serivce -> ingration -> Generic webhook -> API Gateway
