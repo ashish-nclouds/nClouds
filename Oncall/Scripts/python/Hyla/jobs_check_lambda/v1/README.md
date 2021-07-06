@@ -25,7 +25,7 @@ For a minimum time, if we compare to check each alert takes 2-3 mins
 - if spending 3 mins per alert, saves 75 mins for the team
 
 ### Setup 
-![Diagram](![Diagram](../ref_image/diagram.png))
+![Diagram](./diagram.png)
 
 - API Gateway (POST) integrated with Pagerduty
 - PD -> Serivce -> ingration -> Generic webhook -> API Gateway
