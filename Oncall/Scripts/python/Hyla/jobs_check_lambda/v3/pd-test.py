@@ -1,5 +1,4 @@
 # Author: Ashish Mathai 
-# Date 08-07-2021
 import urllib3, json, jenkins, requests, re, time, boto3
 from job_list import *
 from datetime import datetime
